@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 
           var minifiedContent = new CleanCSS().minify(grunt.file.read(srcpath)).styles;
           grunt.file.write(f.dest, minifiedContent);
-          grunt.log.writeln('File "' + f.dest + '" created.');
+          grunt.verbose.writeln('File "' + f.dest + '" created.');
 
         }
 
